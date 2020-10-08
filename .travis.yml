@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t diegovargasg/4inrow -f Dockerfile.dev client/
+  - docker build -t diegovargasg/4inrow -f Dockerfile.dev /client
 
 script:
   - docker run -e CI=true diegovargasg/4inrow npm run test
