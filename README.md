@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/diegovargasg/4inrow.svg?branch=master)](https://travis-ci.com/diegovargasg/4inrow)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true diegovargasg/4inrow npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "4inrow"
+  env: "4inrow-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-617242250642"
+  bucket_path: "4inrow"
+  on:
+    branch: master
+  access_key_id: "$access_key_id"
+  secret_access_key: "$secret_access_key"
