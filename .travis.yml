@@ -4,7 +4,6 @@ services:
   - docker
 
 before_install:
-  - cd client
   - docker build -t diegovargasg/4inrow -f Dockerfile.dev .
 
 script:
